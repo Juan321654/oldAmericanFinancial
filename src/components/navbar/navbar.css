@@ -5,15 +5,15 @@
   padding: 1rem 2rem;
 }
 
-.navbar ul{
+.navbar ul {
   display: flex;
   list-style-type: none;
   gap: 1rem;
 }
 
-.navbar li{
+.navbar li a {
   color: white;
-  font-weight: 700;
+  text-decoration: none;
 }
 
 #main-logo,
@@ -21,8 +21,46 @@
   height: 2.6875rem;
 }
 
+#main-logo-text {
+  position: relative;
+  left: -69px;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+
+#main-logo-text:hover {
+  opacity: 1;
+}
+
 .logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #BE9A60;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

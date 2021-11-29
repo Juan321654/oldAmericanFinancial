@@ -14,7 +14,7 @@ function NavBar() {
         <img id="main-logo-text" src={logoTextUrl} alt="York Logo" />
       </div>
       <ul>
-        <li>HOME</li>
+        <li><a className="hover-underline-animation" href="home">HOME</a></li>
         <li>TEAM</li>
         <li>STRATEGIES</li>
         <li>CONTACT</li>
