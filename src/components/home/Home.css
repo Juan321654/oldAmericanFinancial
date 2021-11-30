@@ -1,6 +1,10 @@
 .columns-text-container {
   display: flex;
   gap: 10px;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  backface-visibility: hidden;
 }
 
 .columns-text-container div {
@@ -42,6 +46,13 @@
   background-color: rgba(255, 255, 255, 0.097);
   backdrop-filter: blur(2px);
   padding: 5px;
+}
+
+.animation-top {
+  animation-name: moveInTop;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  backface-visibility: hidden;
 }
 
 @media only screen and (max-width: 1080px) {

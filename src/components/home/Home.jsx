@@ -35,7 +35,7 @@ function Home() {
     <div className="home-container">
       <video autoPlay loop src={backgroundVideo} />
 
-      <div>
+      <div className='animation-top'>
         <p>
           Differentiated global expertise <br /> & Financial service specialists
         </p>
