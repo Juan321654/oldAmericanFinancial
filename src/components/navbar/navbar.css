@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 1rem 2rem; */
 }
 
 .navbar ul {
@@ -22,10 +21,6 @@
 }
 
 #main-logo-text {
-  position: relative;
-  left: -69px;
-  z-index: 2;
-  transition: opacity 0.3s;
   cursor: pointer;
 }
 

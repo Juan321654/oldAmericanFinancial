@@ -1,19 +1,19 @@
 * {
   /* this makes the box not include extra size when adding "padding" */
   box-sizing: border-box; 
+  font-family: EB Garamond;
 }
 
-
-.App {
-  /* text-align: center; */
-  margin: 0 10rem;
+.padding {
+  padding: 1rem 10%;
 }
 
-video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-  z-index: -1;
+.body {
+  /* background-color: #f2f2f2; */
+  /* background-image: linear-gradient(rgba(68,57,53,1), rgba(255,255,255,0.5)), url("https://www.oldamericanfinancial.com/wp-content/uploads/2019/04/page_images.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  /* opacity: 0.5; */
 }

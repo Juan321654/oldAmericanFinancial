@@ -7,7 +7,7 @@ function NavBar() {
     "https://www.oldamericanfinancial.com/wp-content/uploads/2021/11/logo.jpg";
 
   return (
-    <div className="navbar">
+    <div className="navbar padding">
       <div className="logo-container">
         <img
           id="main-logo-text"
