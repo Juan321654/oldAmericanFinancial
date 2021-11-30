@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
-import logo from '../../assets/images/logo.png';
-import whitelogo  from '../../assets/images/white-logo.png';
+import logo from "../../assets/images/logo.png";
+import whitelogo from "../../assets/images/white-logo.png";
+import { Sling as Hamburger } from "hamburger-react";
 
 function NavBar() {
   const [navBarColor, setNavBarColor] = useState(false);
+  const [isOpen, setOpen] = useState(false);
+
+  console.log(isOpen);
 
   const setBgToWhite = () => setNavBarColor(false);
   const setBgToBlack = () => setNavBarColor(true);
@@ -20,8 +24,7 @@ function NavBar() {
           onClick={() => (window.location.pathname = "/")}
         />
       </div>
-
-      <ul>
+      <ul className="navbar-menu">
         <li>
           <Link
             to="/"
@@ -67,6 +70,12 @@ function NavBar() {
             CLIENT REPORTING
           </Link>
         </li>
+        <Hamburger
+          color={navBarColor ? "black" : "white"}
+          toggled={isOpen}
+          toggle={setOpen}
+          label="Show menu"
+        />
       </ul>
     </div>
   );
