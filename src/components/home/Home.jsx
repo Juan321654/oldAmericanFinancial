@@ -5,22 +5,22 @@ import lineBg from "../../assets/svg/line-bg.svg";
 function Home() {
   let columnsText = (
     <div className="columns-text-container">
-      <div>
-        <div>FOCUSED</div>
+      <div className="div-small-container">
+        <div className="div-pad">FOCUSED</div>
         <div>
           Financial Services investing is all that we do. We offer investors
           expert access to a diverse and complex sector.
         </div>
       </div>
-      <div>
-        <div>GLOBAL</div>
+      <div className="div-small-container">
+        <div className="div-pad">GLOBAL</div>
         <div>
           We have an opportunistic approach to investing globally. We pursue the
           most attractive investments in the most attractive markets.
         </div>
       </div>
-      <div>
-        <div>EXPERIENCED</div>
+      <div className="div-small-container">
+        <div className="div-pad">EXPERIENCED</div>
         <div>
           Our specialist expertise and industry focus provides us with a
           competitive advantage in valuing, re-positioning and transforming
@@ -33,11 +33,13 @@ function Home() {
   return (
     <div className="home-container">
       <div>
-        <p>Differentiated global expertise</p>
-        <img src={lineBg} alt="bg-line" id="line-gb-img"/>
+        <p>
+          Differentiated global expertise <br /> & Financial service specialists
+        </p>
+        <img src={lineBg} alt="bg-line" id="line-gb-img" />
       </div>
       <div>{columnsText}</div>
-      <p>
+      <p style={{ textAlign: "center" }}>
         OLD AMERICAN FINANCIAL® is a $2 + billion global investment management
         and investment company with offices in New York, London & Paris.
       </p>

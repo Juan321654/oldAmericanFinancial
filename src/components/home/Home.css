@@ -1,5 +1,6 @@
 .columns-text-container {
   display: flex;
+  gap: 10px;
 }
 
 .columns-text-container div {
@@ -7,7 +8,7 @@
 }
 
 .columns-text-container div {
-  font-size: 2vw;
+  font-size: 1.5rem;
   font-weight: bold;
   color: white;
 }
@@ -20,18 +21,31 @@
   margin: 0;
 }
 
-#line-gb-img{
+#line-gb-img {
   position: relative;
   /* font-size: 2vw; */
-  width: 20vw;
+  width: 12vw;
   top: -8rem;
-  right: -5rem;
+  right: -1rem;
   z-index: -1;
 }
 
+.div-pad {
+  padding: 1.25rem 0;
+  text-align: center;
+}
 
-@media only screen and (max-width: 1080px){
-	/* shift video to the right  */
+.div-small-container {
+  border: 1px solid lightgray;
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.097);
+  backdrop-filter: blur(2px);
+  padding: 5px;
+}
+
+@media only screen and (max-width: 1080px) {
+  /* shift video to the right  */
   #line-gb-img {
     right: -30px;
     top: -50px;
