@@ -1,7 +1,7 @@
 import "./App.css";
 import NavBar from "./components/navbar/NavBar";
 import { Route, Routes } from "react-router-dom";
-import backgroundVideo from "./assets/pexels-cityxcape-5868771.mp4";
+import backgroundVideo from "./assets/YORK_Home_Banner_HR (1).mp4";
 
 import Home from "./components/home/Home";
 

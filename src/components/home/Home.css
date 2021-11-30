@@ -1,0 +1,39 @@
+.columns-text-container {
+  display: flex;
+}
+
+.columns-text-container div {
+  margin: 0;
+}
+
+.columns-text-container div {
+  font-size: 2vw;
+  font-weight: bold;
+  color: white;
+}
+
+.home-container p {
+  font-size: 2vw;
+  font-weight: bold;
+  color: white;
+  padding-top: 14rem;
+  margin: 0;
+}
+
+#line-gb-img{
+  position: relative;
+  /* font-size: 2vw; */
+  width: 20vw;
+  top: -8rem;
+  right: -5rem;
+  z-index: -1;
+}
+
+
+@media only screen and (max-width: 1080px){
+	/* shift video to the right  */
+  #line-gb-img {
+    right: -30px;
+    top: -50px;
+  }
+}

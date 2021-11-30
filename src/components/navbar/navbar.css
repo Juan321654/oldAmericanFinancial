@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  /* background-color: white; */
 }
 
 .navbar ul {
@@ -12,8 +12,9 @@
 }
 
 .navbar li a {
-  color: black;
+  color: white;
   text-decoration: none;
+  font-weight: 600;
 }
 
 #main-logo,
@@ -41,6 +42,7 @@
 .hover-underline-animation:after {
   content: '';
   position: absolute;
+  border: 1px solid #BE9A60;
   width: 100%;
   transform: scaleX(0);
   height: 2px;
