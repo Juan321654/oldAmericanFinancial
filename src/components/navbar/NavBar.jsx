@@ -16,6 +16,7 @@ function NavBar() {
           onClick={() => (window.location.pathname = "/")}
         />
       </div>
+      
       <ul>
         <li>
           <Link to="/" className="hover-underline-animation">
