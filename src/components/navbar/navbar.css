@@ -72,11 +72,27 @@
   display: none !important;
 }
 
+.show-menu {
+  display: block !important;
+}
+
 @media only screen and (max-width: 1180px){
   .hamburger-react {
     display: block !important;
   }
-  .navbar li {
+  .navbar-menu {
     display: none;
+  }
+  .small-screen-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    background-color: #be9a6082;
+    width: 100%;
+    padding: 1rem;
   }
 }

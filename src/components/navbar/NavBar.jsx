@@ -24,8 +24,8 @@ function NavBar() {
           onClick={() => (window.location.pathname = "/")}
         />
       </div>
-      <ul className="navbar-menu">
-        <li>
+      <ul className={isOpen && "small-screen-menu"}>
+        <li className={`navbar-menu ${isOpen && "show-menu"}`}>
           <Link
             to="/"
             className="hover-underline-animation"
@@ -34,7 +34,7 @@ function NavBar() {
             HOME
           </Link>
         </li>
-        <li>
+        <li className={`navbar-menu ${isOpen && "show-menu"}`}>
           <Link
             to="/our-people"
             className="hover-underline-animation"
@@ -43,7 +43,7 @@ function NavBar() {
             OUR PEOPLE
           </Link>
         </li>
-        <li>
+        <li className={`navbar-menu ${isOpen && "show-menu"}`}>
           <Link
             to="/team"
             className="hover-underline-animation"
@@ -52,7 +52,7 @@ function NavBar() {
             TEAM
           </Link>
         </li>
-        <li>
+        <li className={`navbar-menu ${isOpen && "show-menu"}`}>
           <Link
             to="/contact"
             className="hover-underline-animation"
@@ -61,7 +61,7 @@ function NavBar() {
             CONTACT
           </Link>
         </li>
-        <li>
+        <li className={`navbar-menu ${isOpen && "show-menu"}`}>
           <Link
             to="/client-reporting"
             className="hover-underline-animation"
@@ -70,13 +70,13 @@ function NavBar() {
             CLIENT REPORTING
           </Link>
         </li>
-        <Hamburger
-          color={navBarColor ? "black" : "white"}
-          toggled={isOpen}
-          toggle={setOpen}
-          label="Show menu"
-        />
       </ul>
+      <Hamburger
+        color={navBarColor ? "black" : "white"}
+        toggled={isOpen}
+        toggle={setOpen}
+        label="Show menu"
+      />
     </div>
   );
 }
