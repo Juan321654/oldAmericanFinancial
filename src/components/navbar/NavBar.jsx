@@ -9,8 +9,6 @@ function NavBar() {
   const [navBarColor, setNavBarColor] = useState(false);
   const [isOpen, setOpen] = useState(false);
 
-  console.log(isOpen);
-
   const setBgToWhite = () => setNavBarColor(false);
   const setBgToBlack = () => setNavBarColor(true);
 
@@ -24,7 +22,7 @@ function NavBar() {
           onClick={() => (window.location.pathname = "/")}
         />
       </div>
-      <ul className={isOpen && "small-screen-menu"}>
+      <ul className={`${isOpen && "small-screen-menu"} ${navBarColor && "small-screen-dark"}`}>
         <li className={`navbar-menu ${isOpen && "show-menu"}`}>
           <Link
             to="/"

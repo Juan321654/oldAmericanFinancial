@@ -49,14 +49,14 @@
 .hover-underline-animation:after {
   content: "";
   position: absolute;
-  border: 1px solid #be9a60;
+  border: 1px solid #ffffff;
   width: 100%;
   transform: scaleX(0);
   height: 2px;
   top: 25px;
   bottom: 0;
   left: 0;
-  background-color: #be9a60;
+  background-color: #ffffff;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -96,6 +96,9 @@
     animation-duration: 2s;
     animation-timing-function: ease-out;
     backface-visibility: hidden;
+  }
+  .small-screen-dark {
+    background-color: #be9a60f8;
   }
 }
 

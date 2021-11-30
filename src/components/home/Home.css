@@ -18,7 +18,7 @@
 }
 
 .home-container p {
-  font-size: 2vw;
+  font-size: 2rem;
   font-weight: bold;
   color: white;
   padding-top: 14rem;
@@ -28,7 +28,7 @@
 #line-gb-img {
   position: relative;
   /* font-size: 2vw; */
-  width: 12vw;
+  /* width: 12vw; */
   top: -8rem;
   right: -1rem;
   z-index: -1;
@@ -55,10 +55,10 @@
   backface-visibility: hidden;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 578px) {
   /* shift video to the right  */
   #line-gb-img {
-    right: -30px;
-    top: -50px;
+    /* right: -30px; */
+    top: -200px;
   }
 }
