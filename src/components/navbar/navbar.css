@@ -13,17 +13,25 @@
 
 .navbar li a {
   color: white;
+  /* color: black; */
   text-decoration: none;
   font-weight: 900;
 }
 
-#main-logo,
-#main-logo-text {
+.navbar-white {
+  background-color: white;
+}
+.navbar-white li a {
+  color: black;
+}
+
+#main-logo {
   height: 2.6875rem;
 }
 
-#main-logo-text {
+#main-logo-img {
   cursor: pointer;
+  height: 5rem;
 }
 
 .logo-container {

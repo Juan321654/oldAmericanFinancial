@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import lineBg from "../../assets/svg/line-bg.svg";
+import backgroundVideo from "../../assets/YORK_Home_Banner_HR.mp4";
 
 function Home() {
   let columnsText = (
@@ -32,6 +33,8 @@ function Home() {
 
   return (
     <div className="home-container">
+      <video autoPlay loop src={backgroundVideo} />
+
       <div>
         <p>
           Differentiated global expertise <br /> & Financial service specialists
