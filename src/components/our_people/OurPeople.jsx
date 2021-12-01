@@ -1,5 +1,6 @@
 import React from "react";
 import "./OurPeople.css";
+import ourPeopleImg from "../../assets/images/our-people-img.jpg";
 
 function OurPeople() {
   let fullText = `Our people are our greatest asset, so we strive to attract and retain the best talent by providing a meritocratic environment where every employee can achieve his or her highest potential. We foster a culture of collaboration, continuous learning and professional development. Open communication, constructive feedback and mutual respect are integral to our success.
@@ -13,8 +14,9 @@ function OurPeople() {
   return (
     <div>
       <div className="our-people-container">
-        <div className="our-people-text">
-          <h1>Our People</h1>
+        <img src={ourPeopleImg} alt="old american financial logo"/>
+        <div className="our-people-text padding">
+          <h1 style={{color: 'white'}}>Our People</h1>
           <p>{fullText}</p>
         </div>
       </div>

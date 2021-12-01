@@ -1,6 +1,27 @@
+.our-people-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.our-people-text {
+  position: absolute;
+  background-color: #483a25e0;
+  margin: 0 15%;
+  padding: 1.45rem;
+  border-radius: 5px;
+  backdrop-filter: blur(2px);
+  border: 1px solid #be9a60;
+}
+
 .our-people-text p{
-  font-size: 2rem;
+  font-size: 1.5rem;
   /* line-height: 1rem; */
-  color: #000;
+  color: white;
   margin-bottom: 20px;
 }

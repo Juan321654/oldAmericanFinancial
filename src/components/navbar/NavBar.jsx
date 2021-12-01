@@ -13,7 +13,7 @@ function NavBar() {
   const setBgToBlack = () => setNavBarColor(true);
 
   return (
-    <div className={`navbar padding`}>
+    <div className={`navbar padding ${navBarColor && "navbar-white"}`}>
       <div className="logo-container">
         <img
           id="main-logo-img"
