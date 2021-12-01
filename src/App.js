@@ -6,6 +6,7 @@ import NavBar from "./components/navbar/NavBar";
 import OurPeople from "./components/our_people/OurPeople";
 import Contact from "./components/contact/Contact";
 import ClientReporting from "./components/client_reporting/ClientReporting";
+import BottomNav from "./components/bottom_nav/BottomNav";
 
 
 
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/client-reporting" element={<ClientReporting />} /> 
         </Routes>
       </div>
+      <BottomNav />
     </div>
   );
 }

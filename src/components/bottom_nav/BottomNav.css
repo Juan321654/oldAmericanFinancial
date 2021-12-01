@@ -1,0 +1,22 @@
+.bottom-nav-container {
+  background-color: #343941;
+  padding: 1rem 15%;
+  margin-top: 1rem;
+}
+
+.bottom-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.bottom-nav-links li {
+  list-style-type: none;
+}
+
+.bottom-nav-links li a {
+  color: white;
+  text-decoration: none;
+}
