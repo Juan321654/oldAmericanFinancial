@@ -29,6 +29,20 @@ video {
   /* object-fit: cover; */
 }
 
+.animation-top {
+  animation-name: moveInTop;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  backface-visibility: hidden;
+}
+
+.animation-fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  backface-visibility: hidden;
+}
+
 @media only screen and (max-width: 1080px){
 	/* shift video to the right  */
   video {
@@ -61,5 +75,14 @@ video {
   100% {
     opacity: 1;
     transform: translate(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

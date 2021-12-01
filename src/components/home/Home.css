@@ -48,13 +48,6 @@
   padding: 5px;
 }
 
-.animation-top {
-  animation-name: moveInTop;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  backface-visibility: hidden;
-}
-
 @media only screen and (max-width: 578px) {
   /* shift video to the right  */
   #line-gb-img {

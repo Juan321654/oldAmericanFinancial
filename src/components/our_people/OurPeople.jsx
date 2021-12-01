@@ -12,10 +12,10 @@ function OurPeople() {
   In order to promote relationship building, we often hold firm-sponsored events, such as summer outings, and bring the entire firm together for a “Research Week” in New York at least once per year.`;
 
   return (
-    <div>
+    <div className="animation-fadeIn">
       <div className="our-people-container">
         <img src={ourPeopleImg} alt="old american financial logo"/>
-        <div className="our-people-text padding">
+        <div className="our-people-text padding animation-top">
           <h1 style={{color: 'white'}}>Our People</h1>
           <p>{fullText}</p>
         </div>
