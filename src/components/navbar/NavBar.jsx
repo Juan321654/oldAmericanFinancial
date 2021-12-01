@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
@@ -9,8 +9,24 @@ function NavBar() {
   const [navBarColor, setNavBarColor] = useState(false);
   const [isOpen, setOpen] = useState(false);
 
-  const setBgToWhite = () => setNavBarColor(false);
-  const setBgToBlack = () => setNavBarColor(true);
+  const setBgToWhite = () => {
+    setNavBarColor(false);
+    localStorage.setItem("navBarColor", false);
+  };
+
+  const setBgToBlack = () => {
+    setNavBarColor(true);
+    localStorage.setItem("navBarColor", true);
+  };
+
+  useEffect(() => {
+    const navBarColor = localStorage.getItem("navBarColor");
+    if (navBarColor === "true") {
+      setNavBarColor(true);
+    } else {
+      setNavBarColor(false);
+    }
+  }, []);
 
   return (
     <div className={`navbar padding ${navBarColor && "navbar-white"}`}>
@@ -22,7 +38,11 @@ function NavBar() {
           onClick={() => (window.location.pathname = "/")}
         />
       </div>
-      <ul className={`${isOpen && "small-screen-menu"} ${navBarColor && "small-screen-dark"}`}>
+      <ul
+        className={`${isOpen && "small-screen-menu"} ${
+          navBarColor && "small-screen-dark"
+        }`}
+      >
         <li className={`navbar-menu ${isOpen && "show-menu"}`}>
           <Link
             to="/"
