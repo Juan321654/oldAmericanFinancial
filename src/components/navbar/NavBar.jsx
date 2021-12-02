@@ -60,7 +60,9 @@ function NavBar({ forceReload }) {
         <li className={`navbar-menu ${isOpen && "show-menu"}`}>
           <Link
             to="/"
-            className="hover-underline-animation"
+            className={`hover-underline-animation ${
+              navBarColor && isOpen === false && "underline-dark"
+            }`}
             onClick={setBgToWhite}
           >
             HOME
@@ -69,7 +71,9 @@ function NavBar({ forceReload }) {
         <li className={`navbar-menu ${isOpen && "show-menu"}`}>
           <Link
             to="/our-people"
-            className="hover-underline-animation"
+            className={`hover-underline-animation ${
+              navBarColor && isOpen === false && "underline-dark"
+            }`}
             onClick={setBgToBlack}
           >
             OUR PEOPLE
@@ -78,7 +82,9 @@ function NavBar({ forceReload }) {
         <li className={`navbar-menu ${isOpen && "show-menu"}`}>
           <Link
             to="/team"
-            className="hover-underline-animation"
+            className={`hover-underline-animation ${
+              navBarColor && isOpen === false && "underline-dark"
+            }`}
             onClick={setBgToBlack}
           >
             TEAM
@@ -87,7 +93,9 @@ function NavBar({ forceReload }) {
         <li className={`navbar-menu ${isOpen && "show-menu"}`}>
           <Link
             to="/contact"
-            className="hover-underline-animation"
+            className={`hover-underline-animation ${
+              navBarColor && isOpen === false && "underline-dark"
+            }`}
             onClick={setBgToBlack}
           >
             CONTACT
@@ -96,7 +104,9 @@ function NavBar({ forceReload }) {
         <li className={`navbar-menu ${isOpen && "show-menu"}`}>
           <Link
             to="/client-reporting"
-            className="hover-underline-animation"
+            className={`hover-underline-animation ${
+              navBarColor && isOpen === false && "underline-dark"
+            }`}
             onClick={setBgToBlack}
           >
             CLIENT REPORTING
