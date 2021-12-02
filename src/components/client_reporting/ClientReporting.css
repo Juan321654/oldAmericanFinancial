@@ -1,5 +1,5 @@
 .client-container {
-  font-size: 1.25rem;
+  font-size:  var(--font-size);
   display: flex;
   flex-direction: column;
   height: 80vh;

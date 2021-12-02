@@ -12,14 +12,14 @@
 }
 
 .columns-text-container div {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size:  var(--font-size);
+  font-weight:  var(--font-weight);
   color: white;
 }
 
 .home-container p {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size:  calc(var(--font-size) + 0.5rem);
+  font-weight:  var(--font-weight);
   color: white;
   padding-top: 14rem;
   margin: 0;
@@ -35,7 +35,7 @@
 }
 
 .div-pad {
-  padding: 1.25rem 0;
+  padding:  var(--font-size) 0;
   text-align: center;
 }
 
@@ -44,7 +44,7 @@
   text-align: center;
   padding: 5px;
   background-color: rgba(255, 255, 255, 0.097);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(6px);
   padding: 5px;
 }
 

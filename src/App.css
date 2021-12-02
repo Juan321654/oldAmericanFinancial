@@ -4,6 +4,12 @@
   /* font-family: 'Amiri', serif; */
 }
 
+:root {
+  --main-color: #be9a60f8;
+  --font-size: 1.3rem;
+  --font-weight: 400;
+}
+
 .padding {
   padding: 1rem 15% 0;
 }

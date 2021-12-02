@@ -5,7 +5,7 @@ import logo from "../../assets/images/logo.png";
 import whitelogo from "../../assets/images/white-logo.png";
 import { Sling as Hamburger } from "hamburger-react";
 
-function NavBar({forceReload}) {
+function NavBar({ forceReload }) {
   const [navBarColor, setNavBarColor] = useState(false);
   const [isOpen, setOpen] = useState(false);
 
@@ -18,6 +18,15 @@ function NavBar({forceReload}) {
     setNavBarColor(true);
     localStorage.setItem("navBarColor", true);
   };
+
+  useEffect(() => {
+    const navBarColor = localStorage.getItem("navBarColor");
+    if (navBarColor === "true") {
+      setNavBarColor(true);
+    } else {
+      setNavBarColor(false);
+    }
+  }, []);
 
   useEffect(() => {
     if (forceReload) {

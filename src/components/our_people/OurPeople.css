@@ -20,7 +20,7 @@
 }
 
 .our-people-text p{
-  font-size: 1.5rem;
+  font-size:  var(--font-size);
   /* line-height: 1rem; */
   color: white;
   margin-bottom: 20px;
