@@ -36,7 +36,7 @@ function Home() {
       <video autoPlay loop src={backgroundVideo} />
 
       <div className='animation-top'>
-        <p>
+        <p id="differentiated-text">
           Differentiated global expertise <br /> & Financial service specialists
         </p>
         <img src={lineBg} alt="bg-line" id="line-gb-img" />
