@@ -4,6 +4,10 @@
   /* font-family: 'Amiri', serif; */
 }
 
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
 :root {
   --main-color: #be9a60f8;
   --font-size: 1.3rem;
@@ -54,6 +58,10 @@ video {
   animation-duration: 0.5s;
   animation-timing-function: ease-out;
   backface-visibility: hidden;
+}
+
+@media only screen and (max-width: 400px) {
+  
 }
 
 @media only screen and (max-width: 1080px){

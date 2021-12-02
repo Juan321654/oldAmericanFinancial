@@ -1,5 +1,7 @@
 .columns-text-container {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   gap: 10px;
   animation-name: moveInLeft;
   animation-duration: 1s;
@@ -49,7 +51,15 @@
   padding: 5px;
   background-color: rgba(255, 255, 255, 0.097);
   backdrop-filter: blur(6px);
-  padding: 5px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 375px) {
+  /* shift video to the right  */
+  #line-gb-img {
+    /* right: -30px; */
+    right: 2rem;
+  }
 }
 
 @media only screen and (max-width: 578px) {
