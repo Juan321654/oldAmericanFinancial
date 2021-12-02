@@ -35,7 +35,10 @@ function NavBar() {
           id="main-logo-img"
           src={navBarColor ? logo : whitelogo}
           alt="old american Logo"
-          onClick={() => (window.location.pathname = "/")}
+          onClick={() => {
+            window.location.pathname = "/";
+            setBgToWhite();
+          }}
         />
       </div>
       <ul

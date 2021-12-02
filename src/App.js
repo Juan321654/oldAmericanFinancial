@@ -7,6 +7,10 @@ import OurPeople from "./components/our_people/OurPeople";
 import Contact from "./components/contact/Contact";
 import ClientReporting from "./components/client_reporting/ClientReporting";
 import BottomNav from "./components/bottom_nav/BottomNav";
+import JobOpportunities from "./components/job_opportunities/JobOpportunities";
+import TermsConditions from "./components/terms_conditions/TermsConditions";
+import PrivacyPolicy from "./components/privacy_policy/PrivacyPolicy";
+import WebFraud from "./components/web_fraud/WebFraud";
 
 
 
@@ -20,6 +24,10 @@ function App() {
           <Route exact path="/our-people" element={<OurPeople />} /> 
           <Route exact path="/contact" element={<Contact />} /> 
           <Route exact path="/client-reporting" element={<ClientReporting />} /> 
+          <Route exact path="/job-opportunities" element={<JobOpportunities />} /> 
+          <Route exact path="/terms-conditions" element={<TermsConditions />} /> 
+          <Route exact path="/privacy-policy" element={<PrivacyPolicy />} /> 
+          <Route exact path="/webfraud-phishing-warning" element={<WebFraud />} /> 
         </Routes>
       </div>
       <BottomNav />
