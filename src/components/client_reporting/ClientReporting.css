@@ -15,3 +15,19 @@
   opacity: 0.3;
   object-fit: scale-down;
 }
+
+@media only screen and (max-width: 680px) {
+  .client-container img {
+    left: 5px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .client-container img {
+    opacity: 0.1;
+  }
+}
+@media only screen and (min-width: 1160px) {
+  .client-container {
+    height: 100vh;
+  }
+}
