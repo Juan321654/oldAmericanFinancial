@@ -1,5 +1,6 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
+import { useState } from "react";
 
 import Home from "./components/home/Home";
 import NavBar from "./components/navbar/NavBar";
@@ -15,9 +16,10 @@ import WebFraud from "./components/web_fraud/WebFraud";
 
 
 function App() {
+  const [forceReload, setForceReload] = useState(0)
   return (
     <div className="App animation-fadeIn">
-      <NavBar />
+      <NavBar forceReload={forceReload}/>
       <div className="body padding">
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -30,7 +32,7 @@ function App() {
           <Route exact path="/webfraud-phishing-warning" element={<WebFraud />} /> 
         </Routes>
       </div>
-      <BottomNav />
+      <BottomNav setForceReload={setForceReload}/>
     </div>
   );
 }
