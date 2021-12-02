@@ -1,0 +1,13 @@
+.web-fraud-container {
+  font-size: var(--font-size);
+  height: 100vh;
+}
+
+.web-fraud-container a {
+  text-decoration: none;
+	color: var(--main-color);
+}
+
+.web-fraud-container a:hover {
+  text-decoration: underline;
+}

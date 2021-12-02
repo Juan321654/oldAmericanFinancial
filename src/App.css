@@ -44,6 +44,13 @@ video {
 
 .animation-fadeIn {
   animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  backface-visibility: hidden;
+}
+
+.animation-left {
+  animation-name: moveInLeft;
   animation-duration: 0.5s;
   animation-timing-function: ease-out;
   backface-visibility: hidden;

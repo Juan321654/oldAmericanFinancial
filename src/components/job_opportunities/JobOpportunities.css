@@ -1,0 +1,12 @@
+.job-opp-container {
+  height: 100vh;
+  font-size: var(--font-size);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.job-opp-container img {
+  opacity: 0.4;
+  border-radius: 5px;
+}

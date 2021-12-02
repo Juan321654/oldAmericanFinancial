@@ -4,7 +4,7 @@ import buildingImg from "../../assets/images/building-bottom-view.jpg";
 
 function ClientReporting() {
   return (
-    <div className="client-container">
+    <div className="client-container animation-fadeIn">
       <article>
         <div>
           <h1>Private Equity Funds LP Reporting</h1>

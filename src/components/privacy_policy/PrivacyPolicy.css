@@ -1,0 +1,12 @@
+.privacy-container {
+  font-size: var(--font-size);
+}
+
+.privacy-container a {
+  text-decoration: none;
+	color: var(--main-color);
+}
+
+.privacy-container a:hover {
+  text-decoration: underline;
+}
