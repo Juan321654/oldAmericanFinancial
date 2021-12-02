@@ -33,9 +33,9 @@ function Home() {
 
   return (
     <div className="home-container">
-      <video autoPlay loop src={backgroundVideo} />
+      <video autoPlay loop src={backgroundVideo} playsInline muted />
 
-      <div className='animation-top'>
+      <div className="animation-top">
         <p id="differentiated-text">
           Differentiated global expertise <br /> & Financial service specialists
         </p>
