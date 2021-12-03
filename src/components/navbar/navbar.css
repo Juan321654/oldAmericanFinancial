@@ -96,14 +96,17 @@
 }
 
 @media only screen and (max-width: 600px) {
+  #main-logo-img {
+    height: 4rem;
+  }
   .navbar {
-    flex-direction: column;
+    flex-direction: row !important;
   }
 
-  .navbar ul {
+  /* .navbar ul {
     position: absolute;
     top: 16rem;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1180px) {

@@ -54,20 +54,36 @@
   border-radius: 5px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 425px) {
   /* shift video to the right  */
   #line-gb-img {
     /* right: -30px; */
     right: 2rem;
   }
+
+  video {
+    right: -20rem;
+  }
 }
 
-@media only screen and (max-width: 578px) {
+@media only screen and (max-width: 600px) {
   /* shift video to the right  */
   #line-gb-img {
     /* right: -30px; */
     top: -200px;
   }
+  .padding {
+    padding: 0 1rem;
+  }
+  #differentiated-text {
+    font-size:  calc(var(--font-size));
+    line-height: 100%;
+  }
+
+  video {
+    right: -27rem;
+  }
+
 }
 
 @media only screen and (min-width: 1400px) {
