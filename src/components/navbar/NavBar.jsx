@@ -12,11 +12,13 @@ function NavBar({ forceReload }) {
   const setBgToWhite = () => {
     setNavBarColor(false);
     localStorage.setItem("navBarColor", false);
+    setOpen(false);
   };
 
   const setBgToBlack = () => {
     setNavBarColor(true);
     localStorage.setItem("navBarColor", true);
+    setOpen(false);
   };
 
   useEffect(() => {
@@ -57,7 +59,9 @@ function NavBar({ forceReload }) {
           navBarColor && "small-screen-dark"
         }`}
       >
-        <li className={`navbar-menu ${isOpen && "show-menu"}`}>
+        <li
+          className={`navbar-menu delay-1 small-pad ${isOpen && "show-menu"}`}
+        >
           <Link
             to="/"
             className={`hover-underline-animation ${
@@ -65,10 +69,10 @@ function NavBar({ forceReload }) {
             }`}
             onClick={setBgToWhite}
           >
-            HOME
+            Home
           </Link>
         </li>
-        <li className={`navbar-menu ${isOpen && "show-menu"}`}>
+        <li className={`navbar-menu delay-2 ${isOpen && "show-menu"}`}>
           <Link
             to="/our-people"
             className={`hover-underline-animation ${
@@ -76,10 +80,10 @@ function NavBar({ forceReload }) {
             }`}
             onClick={setBgToBlack}
           >
-            OUR PEOPLE
+            Our people
           </Link>
         </li>
-        <li className={`navbar-menu ${isOpen && "show-menu"}`}>
+        <li className={`navbar-menu delay-3 ${isOpen && "show-menu"}`}>
           <Link
             to="/team"
             className={`hover-underline-animation ${
@@ -87,10 +91,10 @@ function NavBar({ forceReload }) {
             }`}
             onClick={setBgToBlack}
           >
-            TEAM
+            Team
           </Link>
         </li>
-        <li className={`navbar-menu ${isOpen && "show-menu"}`}>
+        <li className={`navbar-menu delay-4 ${isOpen && "show-menu"}`}>
           <Link
             to="/contact"
             className={`hover-underline-animation ${
@@ -98,10 +102,10 @@ function NavBar({ forceReload }) {
             }`}
             onClick={setBgToBlack}
           >
-            CONTACT
+            Contact
           </Link>
         </li>
-        <li className={`navbar-menu ${isOpen && "show-menu"}`}>
+        <li className={`navbar-menu delay-5 ${isOpen && "show-menu"}`}>
           <Link
             to="/client-reporting"
             className={`hover-underline-animation ${
@@ -109,7 +113,7 @@ function NavBar({ forceReload }) {
             }`}
             onClick={setBgToBlack}
           >
-            CLIENT REPORTING
+            Client reporting
           </Link>
         </li>
       </ul>
