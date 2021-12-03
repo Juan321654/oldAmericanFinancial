@@ -12,11 +12,13 @@ function NavBar({ forceReload }) {
   const setBgToWhite = () => {
     setNavBarColor(false);
     localStorage.setItem("navBarColor", false);
+    setOpen(false);
   };
 
   const setBgToBlack = () => {
     setNavBarColor(true);
     localStorage.setItem("navBarColor", true);
+    setOpen(false);
   };
 
   useEffect(() => {

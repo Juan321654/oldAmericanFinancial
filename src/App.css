@@ -12,6 +12,7 @@ h1, h2, h3, h4, h5, p {
   --main-color: #be9a60f8;
   --font-size: 1.3rem;
   --font-weight: 400;
+  --main-blue: #226092;
 }
 
 .padding {
