@@ -58,7 +58,8 @@
   /* shift video to the right  */
   #line-gb-img {
     /* right: -30px; */
-    right: 2rem;
+    right: -1rem;
+    /* bottom: -5rem; */
   }
 
   video {
@@ -76,7 +77,7 @@
     padding: 0 1rem;
   }
   #differentiated-text {
-    font-size:  calc(var(--font-size));
+    font-size:  calc(var(--font-size) + 1rem);
     line-height: 100%;
   }
 
