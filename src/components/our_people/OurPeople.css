@@ -3,19 +3,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  min-height: 100%;
   padding: 0;
   margin: 0;
 }
 
 .our-people-text {
-  position: absolute;
   background-color: #483a25e0;
-  margin: 0 15%;
+  /* margin: 0 15%; */
   padding: 1.45rem;
   border-radius: 5px;
-  backdrop-filter: blur(2px);
+  /* backdrop-filter: blur(2px); */
   border: 1px solid #be9a60;
 }
 
@@ -24,4 +23,43 @@
   /* line-height: 1rem; */
   color: white;
   margin-bottom: 20px;
+}
+
+#our-people-img {
+  max-width: 100%;
+  /* min-height: 100%; */
+  /* object-fit: cover; */
+  /* object-position: center; */
+  position: absolute;
+  /* top: 0; */
+  /* left: 0; */
+  z-index: -1;
+}
+
+.ppl-main-container {
+  min-height: 100vh;
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .our-people-text p{
+    font-size:  calc(var(--font-size) * 0.8);
+  }
+  .our-people-text {
+    background-color: none;
+  }
+  
+}
+
+@media only screen and (max-width: 1200px) {
+  #our-people-img {
+    display: none;
+  }
+  
+}
+
+@media only screen and (max-width: 425px) {
+  .our-people-text p{
+    font-size:  calc(var(--font-size) * 0.7);
+  }
 }
