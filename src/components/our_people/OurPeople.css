@@ -18,8 +18,8 @@
   border: 1px solid #be9a60;
 }
 
-.our-people-text p{
-  font-size:  var(--font-size);
+.our-people-text p {
+  font-size: var(--font-size);
   /* line-height: 1rem; */
   color: white;
   margin-bottom: 20px;
@@ -42,24 +42,16 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .our-people-text p{
-    font-size:  calc(var(--font-size) * 0.8);
+  .our-people-text p {
+    font-size: calc(var(--font-size) * 0.8);
   }
   .our-people-text {
     background-color: none;
   }
-  
 }
 
 @media only screen and (max-width: 1200px) {
   #our-people-img {
     display: none;
-  }
-  
-}
-
-@media only screen and (max-width: 425px) {
-  .our-people-text p{
-    font-size:  calc(var(--font-size) * 0.7);
   }
 }

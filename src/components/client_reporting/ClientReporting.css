@@ -2,7 +2,7 @@
   font-size:  var(--font-size);
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  min-height: 80vh;
   justify-content: space-evenly;
 }
 
@@ -16,11 +16,18 @@
   object-fit: scale-down;
 }
 
-@media only screen and (max-width: 680px) {
+.client-container a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+
+@media only screen and (max-width: 600px) {
   .client-container img {
-    left: 5px;
+    left: -5rem;
   }
 }
+
 @media only screen and (max-width: 1100px) {
   .client-container img {
     opacity: 0.1;
