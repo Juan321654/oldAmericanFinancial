@@ -1,5 +1,5 @@
 .job-opp-container {
-  height: 100vh;
+  min-height: 100vh;
   font-size: var(--font-size);
   display: flex;
   flex-direction: column;
