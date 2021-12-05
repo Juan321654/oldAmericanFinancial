@@ -96,9 +96,9 @@
 }
 
 @media only screen and (max-width: 600px) {
-  #main-logo-img {
+  /* #main-logo-img {
     height: 4rem;
-  }
+  } */
   .navbar {
     flex-direction: row !important;
   }
