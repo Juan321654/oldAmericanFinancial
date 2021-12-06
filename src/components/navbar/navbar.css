@@ -33,7 +33,7 @@
 
 #main-logo-img {
   cursor: pointer;
-  height: 5rem;
+  height: 7rem;
 }
 
 .logo-container {
@@ -97,7 +97,7 @@
 
 @media only screen and (max-width: 600px) {
   #main-logo-img {
-    height: 4rem;
+    height: 5rem;
   }
   .navbar {
     flex-direction: row !important;

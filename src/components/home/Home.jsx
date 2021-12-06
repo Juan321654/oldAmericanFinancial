@@ -28,6 +28,12 @@ function Home() {
           businesses.
         </div>
       </div>
+      {/* <div className="div-small-container small-cont-colored">
+        <div>
+          OLD AMERICAN FINANCIAL® is a $2 + billion global investment management
+          and investment company with offices in New York, London & Paris.
+        </div>
+      </div> */}
     </div>
   );
 

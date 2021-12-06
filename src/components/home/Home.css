@@ -11,6 +11,11 @@
 
 .columns-text-container div {
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  color: white;
+  letter-spacing: 2px;
 }
 
 .columns-text-container div {
@@ -52,6 +57,14 @@
   background-color: rgba(255, 255, 255, 0.097);
   backdrop-filter: blur(6px);
   border-radius: 5px;
+}
+
+.small-cont-colored {
+  background-color: rgba(181, 114, 114, 0.097);
+}
+
+#differentiated-text {
+  font-family: 'Amiri', serif;
 }
 
 @media only screen and (max-width: 425px) {

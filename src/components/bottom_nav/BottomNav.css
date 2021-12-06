@@ -1,15 +1,21 @@
 .bottom-nav-container {
   background-color: #343941;
-  padding: 1rem 15%;
-  margin-top: 1rem;
+  padding: 1.5rem;
+  /* margin-top: 1rem; */
+}
+
+.bottom-nav-container ul{
+  list-style: none;
+  padding: 0;
+  /* margin: 0.5rem; */
 }
 
 .bottom-nav-links {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin: 0;
-  gap: 1rem;
-  justify-content: space-between;
+  /* gap: 1rem; */
+  justify-content: center;
 }
 
 .bottom-nav-links li {
@@ -17,6 +23,87 @@
 }
 
 .bottom-nav-links li a {
-  color: white;
+  --links-font-size: 0.9rem;
+  --links-line-height: 1.5rem;
+
+  
+  color: #adadad;
   text-decoration: none;
+  font-size: var(--links-font-size);
+  line-height: var(--links-line-height);
+  cursor: pointer;
+}
+
+.bottom-nav-links li a:hover {
+  color: var(--main-color);
+}
+
+.bottom-main-links li a:active {
+  color: var(--main-color);
+}
+
+.copyright {
+  font-size: var(--links-font-size);
+  line-height: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #adadad;
+  margin-bottom: 0.5rem;
+  /* text-align: center; */
+}
+
+.bottom-nav-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 1rem; */
+  /* padding-top: 1rem; */
+}
+
+#bottom-nav-logo {
+  /* width: 100%; */
+  /* height: auto; */
+  /* max-width: 100%; */
+  /* max-height: 100%; */
+  /* margin: 0 auto; */
+  cursor: pointer;
+  height: 5.5rem;
+}
+
+.bottom-main-links li {
+  list-style-type: none;
+}
+
+.bottom-main-links li a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.425rem;
+  display: block;
+  text-transform: uppercase;
+  color: #d8d8d8;
+  padding: 0;
+  transition: color 0.3s linear;
+  text-decoration: none;
+}
+
+.bottom-main-links li a:hover {
+  color: var(--main-color);
+}
+
+@media only screen and (max-width: 600px) {
+  .bottom-nav-links {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 901px) {
+  .bottom-main-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .copyright {
+    text-align: center;
+  }
 }
