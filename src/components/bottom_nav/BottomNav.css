@@ -7,7 +7,7 @@
 .bottom-nav-container ul{
   list-style: none;
   padding: 0;
-  /* margin: 0; */
+  /* margin: 0.5rem; */
 }
 
 .bottom-nav-links {
@@ -87,8 +87,23 @@
   text-decoration: none;
 }
 
+.bottom-main-links li a:hover {
+  color: var(--main-color);
+}
+
 @media only screen and (max-width: 600px) {
   .bottom-nav-links {
     flex-direction: column;
+  }
+}
+@media only screen and (min-width: 901px) {
+  .bottom-main-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .copyright {
+    text-align: center;
   }
 }
