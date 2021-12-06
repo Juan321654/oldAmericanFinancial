@@ -13,7 +13,8 @@ body {
   margin: 0;
   /* font-family: 'EB Garamond', serif; */
   /* font-family: "Roboto Slab", serif; */
-  font-family: 'Amiri', serif;
+  /* font-family: 'Amiri', serif; */
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: 1px;

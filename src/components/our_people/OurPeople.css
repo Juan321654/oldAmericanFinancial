@@ -25,6 +25,10 @@
   margin-bottom: 20px;
 }
 
+.our-people-text h1 {
+  font-family: 'Amiri', serif;
+}
+
 #our-people-img {
   max-width: 100%;
   /* min-height: 100%; */

@@ -17,13 +17,13 @@ html {
 
 :root {
   --main-color: #be9a60f8;
-  --font-size: 1.3rem;
+  --font-size: 1rem;
   --font-weight: 400;
   --main-blue: #226092;
 }
 
 .padding {
-  padding: 1rem 15% 0;
+  padding: 1rem 15%;
 }
 
 .body {
