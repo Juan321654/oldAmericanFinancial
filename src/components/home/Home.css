@@ -19,8 +19,8 @@
 }
 
 .columns-text-container div {
-  font-size:  var(--font-size);
-  font-weight:  var(--font-weight);
+  /* font-size:  var(--font-size); */
+  /* font-weight:  var(--font-weight); */
   color: white;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .home-container p {
-  font-size:  calc(var(--font-size) + 0.5rem);
+  /* font-size:  calc(var(--font-size) + 0.5rem); */
   font-weight:  var(--font-weight);
   color: white;
   padding-top: 14rem;
@@ -96,6 +96,9 @@
 
   video {
     right: -27rem;
+  }
+  .home-container{
+    margin: 1rem 0;
   }
 
 }

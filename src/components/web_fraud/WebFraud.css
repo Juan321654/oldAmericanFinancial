@@ -1,6 +1,7 @@
 .web-fraud-container {
   font-size: var(--font-size);
   min-height: 100vh;
+  margin: 1rem 0;
 }
 
 .web-fraud-container a {

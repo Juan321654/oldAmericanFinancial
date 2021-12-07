@@ -1,5 +1,6 @@
 .privacy-container {
   font-size: var(--font-size);
+  margin: 1rem 0;
 }
 
 .privacy-container a {

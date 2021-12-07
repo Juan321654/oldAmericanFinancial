@@ -22,6 +22,7 @@ function NavBar({ forceReload }) {
   };
 
   useEffect(() => {
+    if (window.location.pathname === "/") localStorage.setItem("navBarColor", false);
     const navBarColor = localStorage.getItem("navBarColor");
     if (navBarColor === "true") {
       setNavBarColor(true);
