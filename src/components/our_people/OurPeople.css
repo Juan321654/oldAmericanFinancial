@@ -47,10 +47,11 @@
 
 @media only screen and (max-width: 600px) {
   .our-people-text p {
-    font-size: calc(var(--font-size) * 0.8);
+    font-size: calc(var(--font-size) * 0.9);
   }
   .our-people-text {
     background-color: none;
+    min-height: 90vh;
   }
 }
 
