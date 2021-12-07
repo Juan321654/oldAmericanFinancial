@@ -20,7 +20,7 @@
 
 .columns-text-container div {
   /* font-size:  var(--font-size); */
-  /* font-weight:  var(--font-weight); */
+  font-weight:  100;
   color: white;
 }
 

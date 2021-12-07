@@ -1,9 +1,18 @@
 .client-container {
   font-size:  calc(var(--font-size) * 1.2);
+  font-weight: 200;
   display: flex;
   flex-direction: column;
   min-height: 80vh;
   justify-content: space-evenly;
+}
+
+.client-container h1 {
+  font-weight: 400;
+}
+
+.client-container h2 {
+  font-weight: 400;
 }
 
 .client-container img {
