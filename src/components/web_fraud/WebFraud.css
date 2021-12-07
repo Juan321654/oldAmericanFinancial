@@ -2,6 +2,15 @@
   font-size: var(--font-size);
   min-height: 100vh;
   margin: 1rem 0;
+  font-weight: 200;
+}
+
+.web-fraud-container h1 {
+  font-weight: 200;
+}
+
+.web-fraud-container strong {
+  font-weight: 300;
 }
 
 .web-fraud-container a {

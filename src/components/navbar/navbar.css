@@ -15,7 +15,7 @@
   color: #fefefe;
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
-  font-weight: calc(var(--font-weight) + 300);
+  font-weight: 500;
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: rgba(0, 0, 0, 0.227);
 }
